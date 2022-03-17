@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+
+
 struct AddingStrokeBorder__supportwithInsettableShape: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
+            .strokeBorder(.blue, lineWidth: 40)
     }
 }
 
